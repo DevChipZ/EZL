@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Login | EZL</title>
+    <title>Create Account | EZL</title>
 
     <link rel="stylesheet" href="style.css">
 
@@ -24,10 +24,8 @@
     </div>
 
     <nav>
-
         <a href="index.html">Home</a>
-        <a href="signup.html">Sign Up</a>
-
+        <a href="login.html">Login</a>
     </nav>
 
 </header>
@@ -36,53 +34,61 @@
 
     <div class="login-card">
 
-        <h1>Welcome Back</h1>
+        <h1>Create Your Account</h1>
 
         <p>
-            Login to continue your AI learning journey.
+            Join EZL and begin your AI-powered learning journey.
         </p>
 
-        <form id="login-form">
+        <form id="signup-form">
 
             <div class="input-group">
-
-                <label>Email</label>
-
+                <label>Full Name</label>
                 <input
-                    type="email"
-                    id="username"
-                    placeholder="Enter your email"
+                    type="text"
+                    id="fullname"
+                    placeholder="Enter your full name"
                     required>
-
             </div>
 
             <div class="input-group">
+                <label>Email</label>
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Enter your email"
+                    required>
+            </div>
 
+            <div class="input-group">
                 <label>Password</label>
-
                 <input
                     type="password"
                     id="password"
-                    placeholder="Enter your password"
+                    placeholder="Create a password"
                     required>
+            </div>
 
+            <div class="input-group">
+                <label>Confirm Password</label>
+                <input
+                    type="password"
+                    id="confirm-password"
+                    placeholder="Confirm password"
+                    required>
             </div>
 
             <button type="submit" class="primary-btn">
-
-                Login
-
+                Create Account
             </button>
 
         </form>
 
         <div class="extra-links">
-
             <p>
-                Don't have an account?
-                <a href="signup.html">Create One</a>
+                Already have an account?
+                <a href="login.html">Login Here</a>
             </p>
-
         </div>
 
     </div>
@@ -90,17 +96,10 @@
 </div>
 
 <footer>
-
-    <p>
-
-        © 2026 EZL • AI Learning Platform
-
-    </p>
-
+    <p>© 2026 EZL • AI Learning Platform</p>
 </footer>
 
 <script src="script.js"></script>
 
 </body>
-
 </html>
